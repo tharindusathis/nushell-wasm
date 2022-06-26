@@ -9,7 +9,7 @@ use serde::Deserialize;
 
 use wasm_bindgen::prelude::*;
 
-#[wasm_bindgen(module = "/www/module.js")]
+#[wasm_bindgen(raw_module =  "./module.js")]
 extern "C" {
     fn readfile(path: String) -> String;
 }

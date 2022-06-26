@@ -9,7 +9,7 @@ use wasm_bindgen::prelude::*;
 
 pub struct Sys;
 
-#[wasm_bindgen(module = "/www/module.js")]
+#[wasm_bindgen(raw_module =  "./module.js")]
 extern "C" {
     fn getPlatform() -> String;
     fn getBrowserCookiesEnabled() -> bool;

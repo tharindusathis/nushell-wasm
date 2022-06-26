@@ -10,7 +10,7 @@ use wasm_bindgen::prelude::*;
 
 pub struct SubCommand;
 
-#[wasm_bindgen(module = "/www/module.js")]
+#[wasm_bindgen(raw_module =  "./module.js")]
 extern "C" {
     fn random(start: u32, end: u32) -> u32;
 }

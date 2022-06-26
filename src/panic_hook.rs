@@ -10,7 +10,7 @@ extern "C" {
     // something on the JS side has to expose this global debug object with an error method
     #[wasm_bindgen(js_namespace = debug)]
     // an explicit module would be cleaner, but for some reason that isn't working here
-    // #[wasm_bindgen(module = "/www/module.js")]
+    // #[wasm_bindgen(raw_module =  "module.js")]
     fn error(msg: String);
 
     type Error;
